@@ -65,7 +65,7 @@ header{
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
-
+/* area principal mobile */
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
@@ -125,8 +125,7 @@ article{
   margin-bottom: 20px;
   border-radius: 5px;
 }
-
-#h2{
+ h2{
   color: var(--destaque);
   margin-bottom: 10px;
 }
