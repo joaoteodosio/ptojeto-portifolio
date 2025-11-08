@@ -48,6 +48,19 @@ header{
   z-index: 1;
 }
 
+
+/* Estilos padrão (light) */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para o modo dark */
+body.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
 #menu ul{
   list-style: none;
   display: flex;
