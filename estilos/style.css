@@ -21,12 +21,21 @@ body{
 }
 
 :root{
-  --fundo-principal: #f5f5f5;
+  --fundo-principal: #b3b2b2;
   --texto: #222222;
   --texto-inverso:#ffffff;
-  --destaque: #0077ff;
-  --destaque-inverso: #66bbff;
-  --fundo-card: #ffffff;
+  --destaque: #006ae2;
+  --destaque-inverso: #1884db;
+  --fundo-card: #f5f5f5;
+}
+
+body.escuro{
+  --fundo-principal:#636363;
+  --texto:#e0e0e0;
+  --texto-inverso:#ffffff;
+  --destaque:#094f91;
+  --destaque-inverso:#609dec;/*a73917*/
+  --fundo-card:#201f1f;
 }
 
 body{
@@ -34,6 +43,7 @@ body{
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header{
@@ -52,13 +62,13 @@ header{
 /* Estilos padrão (light) */
 body {
   background-color: white;
-  color: black;
+  color:var(--texto);
 }
 
 /* Estilos para o modo dark */
 body.dark {
-  background-color: #1a1a1a;
-  color: white;
+  background-color:var(--fundo-principal);
+  color:var(--texto-inverso);
 }
 
 #menu ul{
@@ -108,7 +118,7 @@ main{
   margin-bottom: 15px;
 }
 #ficha h1{
-  color: var(--destaque);
+  color: var(--destaque);/*#0077ff)*/
   margin: 15px 0;
   font-size: 1.5em;
   text-align: left;
